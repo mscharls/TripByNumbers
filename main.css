@@ -44,23 +44,31 @@ section, div, span {
 
 /* ------------------------- HELPER CLASSES ------------------------- */
 
-.tall         { min-height:100vh; }  /*used*/
-.med-height   { height: 50vh; }  /*used*/
+.tall         { min-height:100vh; }
+.med-height   { height: 50vh; }
 
-.textcentered     { text-align: center; } /*used*/
-.textright        { text-align: right; }  /*used*/
+.width-95   {width:95%}
 
-.textbottom { align-self: flex-end } /*used*/
+.textcentered     { text-align: center; }
+.textright        { text-align: right; }
+.textbottom       { align-self: flex-end }
 
-.padding-2 {padding: 2%}
+.line-height      {line-height: 1.7}
+
+.no-wrap  {white-space: nowrap;}
+
+.padding-2             {padding: 2%}
+.padding-10            {padding:10%}
+.padding-top-bottom-20 {padding:20% 0% 20% 0%}
+.padding-top-bottom-10 {padding:10% 0% 10% 0%}
 
 .margin-top {margin-top: 2vh}
 
-.f-small {font-size: 1.5vw}
-.f-medium {font-size: 2vw}
-.f-large {font-size: 4vw}
+.f-small    {font-size: 1.5vw}
+.f-medium   {font-size: 2.2vw}
+.f-large    {font-size: 4vw}
 
-.f-white {color:white}
+.f-light {color:white}
 
 /* ------------------------- UNIVERSAL STYLES ------------------------- */
 
@@ -79,9 +87,14 @@ h1 {
   font-family: 'Raleway', sans-serif;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+}
 /* ------------------------- HEADER & FOOTER ------------------------- */
 
-
+.icon {
+  width: 5vw;
+}
 
 
 /* ------------------------- MODULAR ELEMENTS ------------------------- */
@@ -90,9 +103,31 @@ h1 {
 .main-image {
   background-image: url("assets/clouds.jpg");
   width:95%;
-  height:100vh;
-  background-position:cover;
+  background-size:cover;
   background-attachment: fixed;
   margin:auto;
+}
 
+.block {
+  background-color: #463656;
+  width: 100%;
+}
+
+.bump-right {
+  margin-right: -48vw;
+  margin-left: 48vw;
+  background-color: #F3E8D8;
+}
+
+.bump-left  {
+  margin-right: 48vw;
+  margin-left: -48vw;
+  background-color: #F3E8D8;
+}
+
+.button {
+  background-color:#463656;
+  padding: 1%;
+  border-radius: 3px;
+  margin: 3vw;
 }
