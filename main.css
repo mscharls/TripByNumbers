@@ -1,0 +1,98 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+  - SPECIFIC PAGES
+    - Page Name
+---------------------------
+Website Fonts:
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+Website Colours: List colour hex codes here for reference
+black: black
+white: white
+tbn taupe: #F3E8D8
+tbn purple: #463656
+
+
+/* ------------------------- CSS RESET ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
+
+
+/* ------------------------- SHOW BOXES ------------------------- */
+section, div, span {
+  /* padding: 1%; */
+  /* border: 1px solid black; */
+}
+
+/* ------------------------- HELPER CLASSES ------------------------- */
+
+.tall         { min-height:100vh; }  /*used*/
+.med-height   { height: 50vh; }  /*used*/
+
+.textcentered     { text-align: center; } /*used*/
+.textright        { text-align: right; }  /*used*/
+
+.textbottom { align-self: flex-end } /*used*/
+
+.padding-2 {padding: 2%}
+
+.margin-top {margin-top: 2vh}
+
+.f-small {font-size: 1.5vw}
+.f-medium {font-size: 2vw}
+.f-large {font-size: 4vw}
+
+.f-white {color:white}
+
+/* ------------------------- UNIVERSAL STYLES ------------------------- */
+
+a {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+hr {
+  margin:auto;
+  width:95%;
+  margin-bottom: 2%
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ------------------------- HEADER & FOOTER ------------------------- */
+
+
+
+
+/* ------------------------- MODULAR ELEMENTS ------------------------- */
+
+
+.main-image {
+  background-image: url("assets/clouds.jpg");
+  width:95%;
+  height:100vh;
+  background-position:cover;
+  background-attachment: fixed;
+  margin:auto;
+
+}
