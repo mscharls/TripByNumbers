@@ -58,11 +58,16 @@ section, div, span {
 .no-wrap  {white-space: nowrap;}
 
 .padding-2             {padding: 2%}
+.padding-5             {padding: 5%}
 .padding-10            {padding:10%}
+.padding-top-20        {padding-top:20%}
 .padding-top-bottom-20 {padding:20% 0% 20% 0%}
 .padding-top-bottom-10 {padding:10% 0% 10% 0%}
+.padding-top-bottom-5 {padding:5% 0% 5% 0%}
 
-.margin-top {margin-top: 2vh}
+.margin-top-1     {margin-top: 1%}
+.margin-bottom-1  {margin-bottom:1%}
+.margin-2         {margin:2%}
 
 .f-small    {font-size: 1.5vw}
 .f-medium   {font-size: 2.2vw}
@@ -74,7 +79,7 @@ section, div, span {
 
 /* ------------------------- UNIVERSAL STYLES ------------------------- */
 
-a {
+a, div {
   font-family: 'Raleway', sans-serif;
   color: black;
 }
@@ -95,8 +100,9 @@ p {
 /* ------------------------- HEADER & FOOTER ------------------------- */
 
 .icon {
-  width: 5vw;
+  width: 3vw;
 }
+
 
 /* ------------------------- MODULAR ELEMENTS ------------------------- */
 
@@ -117,14 +123,23 @@ p {
 .bump-right {
   margin-right: -48vw;
   margin-left: 48vw;
-  background-color: #F3E8D8;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  z-index:-1;
 }
 
 .bump-left  {
   margin-right: 48vw;
   margin-left: -48vw;
-  background-color: #F3E8D8;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  z-index:-1;
 }
+.color-light {
+  background-color:rgb(243,232,216,0.4);
+  opacity: 0.2;
+}
+
 
 .button {
   background-color:#463656;
