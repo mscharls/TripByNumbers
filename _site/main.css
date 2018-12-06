@@ -1,0 +1,149 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+  - SPECIFIC PAGES
+    - Page Name
+---------------------------
+Website Fonts:
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+Website Colours: List colour hex codes here for reference
+black: black
+white: white
+tbn taupe: #F3E8D8
+tbn purple: #463656
+
+
+/* ------------------------- CSS RESET ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
+
+
+/* ------------------------- SHOW BOXES ------------------------- */
+section, div, span {
+  /* padding: 1%; */
+  /* border: 1px solid black; */
+}
+
+/* ------------------------- HELPER CLASSES ------------------------- */
+
+.tall         { min-height:100vh; }
+.med-height   { height: 50vh; }
+
+.width-95   {width:95%}
+
+.textcentered     { text-align: center; }
+.textright        { text-align: right; }
+.textbottom       { align-self: flex-end }
+
+.line-height      {line-height: 1.7}
+
+.no-wrap  {white-space: nowrap;}
+
+.padding-2             {padding: 2%}
+.padding-5             {padding: 5%}
+.padding-10            {padding:10%}
+.padding-top-20        {padding-top:20%}
+.padding-top-bottom-20 {padding:20% 0% 20% 0%}
+.padding-top-bottom-10 {padding:10% 0% 10% 0%}
+.padding-top-bottom-5 {padding:5% 0% 5% 0%}
+
+.margin-top-1     {margin-top: 1%}
+.margin-bottom-1  {margin-bottom:1%}
+.margin-2         {margin:2%}
+
+.f-small    {font-size: 1.5vw}
+.f-medium   {font-size: 2.2vw}
+.f-large    {font-size: 4vw}
+
+.f-light {color:white}
+
+.hide {visibility:hidden}
+
+/* ------------------------- UNIVERSAL STYLES ------------------------- */
+
+a, div {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+hr {
+  margin:auto;
+  width:95%;
+  margin-bottom: 2%
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+/* ------------------------- HEADER & FOOTER ------------------------- */
+
+.icon {
+  width: 3vw;
+}
+
+
+/* ------------------------- MODULAR ELEMENTS ------------------------- */
+
+
+.main-image {
+  background-image: url("assets/clouds.jpg");
+  width:95%;
+  background-size:cover;
+  background-attachment: fixed;
+  margin:auto;
+}
+
+.block {
+  background-color: #463656;
+  width: 100%;
+}
+
+.bump-right {
+  margin-right: -48vw;
+  margin-left: 48vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  z-index:-1;
+}
+
+.bump-left  {
+  margin-right: 48vw;
+  margin-left: -48vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  z-index:-1;
+}
+.color-light {
+  background-color:rgb(243,232,216,0.4);
+  opacity: 0.2;
+}
+
+
+.button {
+  background-color:#463656;
+  padding: 1%;
+  border-radius: 3px;
+  margin: 3vw;
+}
