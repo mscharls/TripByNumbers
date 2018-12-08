@@ -97,6 +97,10 @@ h1 {
 p {
   font-family: 'Open Sans', sans-serif;
 }
+
+.img {
+  background-size:cover;
+}
 /* ------------------------- HEADER & FOOTER ------------------------- */
 
 .icon {
@@ -110,7 +114,6 @@ p {
 .main-image {
   background-image: url("assets/clouds.jpg");
   width:95%;
-  background-size:cover;
   background-attachment: fixed;
   margin:auto;
 }
@@ -140,10 +143,19 @@ p {
   opacity: 0.2;
 }
 
-
 .button {
   background-color:#463656;
   padding: 1%;
   border-radius: 3px;
   margin: 3vw;
+  transition:1s;
+}
+
+.button:hover {
+  background-color:#F3E8D8;
+}
+
+
+.photography {
+  background-image: url("assets/clouds.jpg");
 }
